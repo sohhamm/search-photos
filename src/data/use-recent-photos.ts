@@ -25,3 +25,5 @@ export const useRecentPhotos = () => {
     error,
   };
 };
+
+`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=eba79adb9997a7f787979bf8f0c01f3d&text=car&format=json&nojsoncallback=1`;
