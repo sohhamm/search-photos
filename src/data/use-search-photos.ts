@@ -13,7 +13,7 @@ const getSearchResults = async (url) => {
   }
 };
 
-export const useRecentPhotos = ({ searchText }) => {
+export const useSearchPhotos = ({ searchText }) => {
   const url = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${
     import.meta.env.VITE_API_KEY
   }&text=${searchText}&format=json&nojsoncallback=1`;

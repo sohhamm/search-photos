@@ -33,7 +33,7 @@ export default function ComboBox() {
   return (
     <CUIAutoComplete
       label="Choose preferred work locations"
-      placeholder="Type a Country"
+      placeholder="Search for photos"
       onCreateItem={handleCreateItem}
       items={pickerItems}
       selectedItems={selectedItems}

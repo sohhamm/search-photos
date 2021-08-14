@@ -2,7 +2,7 @@ import useSWR from 'swr';
 
 const URL = ` https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=${
   import.meta.env.VITE_API_KEY
-}&format=json&nojsoncallback=1`;
+}&extras=url_m&format=json&nojsoncallback=1`;
 
 const getRecentPhotos = async () => {
   try {

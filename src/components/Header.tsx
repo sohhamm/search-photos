@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { MdSearch } from 'react-icons/md';
 import {
+  Box,
   Flex,
   Heading,
   Icon,
@@ -17,7 +18,7 @@ export default function Header() {
       justify="center"
       align="center"
       direction="column"
-      bg="bisque"
+      bg="gray.600"
     >
       {/* <InputGroup w="30%">
         <Input />
@@ -25,8 +26,10 @@ export default function Header() {
           <Icon as={MdSearch} />
         </InputRightElement>
       </InputGroup> */}
-      <Heading>Search Photos</Heading>
-      <ComboBox />
+      <Heading color="white">Search Photos</Heading>
+      <Box zIndex={1}>
+        <ComboBox />
+      </Box>
     </Flex>
   );
 }
