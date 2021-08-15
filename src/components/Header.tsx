@@ -9,7 +9,7 @@ import {
   InputGroup,
   InputRightElement,
 } from '@chakra-ui/react';
-import ComboBox from './ComboBox';
+import SearchBar from './SearchBar/SearchBar';
 
 export default function Header() {
   return (
@@ -20,15 +20,9 @@ export default function Header() {
       direction="column"
       bg="gray.600"
     >
-      {/* <InputGroup w="30%">
-        <Input />
-        <InputRightElement>
-          <Icon as={MdSearch} />
-        </InputRightElement>
-      </InputGroup> */}
       <Heading color="white">Search Photos</Heading>
       <Box zIndex={1}>
-        <ComboBox />
+        <SearchBar />
       </Box>
     </Flex>
   );
